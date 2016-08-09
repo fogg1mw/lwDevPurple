@@ -168,9 +168,10 @@ h6 {
 }
 
 footer {
-    padding: 10px 0;
+    padding: 0px 0;
     background-color: #000;
     border-top: 1px solid #4DE1F3;
+    height: 50px;
 }
 
 span.copyright {
@@ -260,3 +261,14 @@ transform: skew(-25deg);
   background: #a1a1a1;
   color: #8D1AB7;
   }
+
+html, body {
+  height: 100%;
+}
+
+.rap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;
+}
