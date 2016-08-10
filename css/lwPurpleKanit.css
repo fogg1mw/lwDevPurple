@@ -219,8 +219,28 @@ span.copyright {
     background-size: cover;
     background-color: #8D1AB7;
     background-blend-mode: hard-light;
+    animation:mainimgtime 18s;
+  -moz-animation:mainimgtime 18s infinite; /* Firefox */
+-webkit-animation:mainimgtime 18s infinite; /* Safari and Chrome */
+  }
+
+  @-moz-keyframes mainimgtime /* Firefox */
+{
+  0%   {background-color:#8D1AB7;}
+  25%  {background-color:#4DE1F3;}
+  50% {background-color:#ff00ff;}
+  80%  {background-color:#00ff00;}
+  100%   {background-color:#8D1AB7;}
 }
 
+    @-webkit-keyframes mainimgtime /* Safari and Chrome */
+{
+  0%   {background-color:#8D1AB7;}
+  25%  {background-color:#4DE1F3;}
+  50% {background-color:#ff00ff;}
+  80%  {background-color:#00ff00;}
+  100%   {background-color:#8D1AB7;}
+}}
 a {
     color: #8D1AB7;
     text-decoration: none;
